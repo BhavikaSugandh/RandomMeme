@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="showData()">Click me</button>
+    <script>
+      async function showData() {
+        const res = await fetch(
+          "https://api.openweathermap.org/data/2.5/weather?q=boston&appid=19d3808bdede91a03f4f83eb710c56bb&units=metric"
+        );
+        const data = await res.json();
+        console.log(data);
+        console.log(data.name);
+        console.log(data.weather[0].description);
+        console.log("Temperature: " + data.main.temp);
+        console.log("Pressure: " + data.main.pressure);
+        console.log("Humidity: " + data.main.humidity);
+        console.log("Visibility: " + data.visibility);
+        console.log("Wind Speed: " + data.wind.speed);
+      }
+    </script>
+  </body>
+</html>

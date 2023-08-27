@@ -1,0 +1,39 @@
+.container{
+    background-color:antiquewhite;
+   
+    height:100vh;
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.countdown{
+background:linear-gradient(to top,#ce72e0,#f5ea84,#f06ca7);
+height:90px;
+width:300px;
+border-radius:10px;
+text-align: center;
+display: block;
+margin:auto;
+}
+h1{
+    color:#f06ca7;
+    font-family:'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+    text-shadow:3px 3px 2px skyblue;
+    font-size:40px;
+    text-align: center;
+    line-height:100px;
+
+}
+h2{
+    color:#f06ca7;
+    font-family:'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+    text-shadow:3px 3px 2px skyblue;
+    font-size:25px;
+    text-align: center;
+    line-height:100px;
+}
